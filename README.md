@@ -14,19 +14,23 @@ Experimental Identification of Physically Feasible Dynamic Parameters of General
 - Cristóvão D. Sousa, [crisjss@gmail.com](mailto:crisjss@gmail.com)
 - Rui Cortesão, [cortesao@isr.uc.pt](mailto:cortesao@isr.uc.pt)
 
-环境配置与运行
+环境配置
 -------------------
 
 1. 安装Anaconda，并根据**environment.yaml**文件创建环境
 2. 打开一个终端，激活上述创建的虚拟环境: conda activate sousa
 3. 在第2步中激活虚拟环境的终端中，cd到third_party_library目录，解压pyOpt-1.2.0.zip和SymPyBotics-master.zip，然后先后进去解压后的目录，运行 python setup.py install 安装这两个库
 4. cd到third_party_library目录，解压csdp6.2.0linuxx86_64.zip和DSDP5.8P4.zip，然后先后进入解压后的两个目录，进到bin目录下，运行sudo cp * /usr/bin
-5. 在虚拟环境中运行jupyter-notebook
-6. 注意阅读**General Robot Dynamic Parameter Identification.ipynb**文件注释，修改机器人DH参数等，以及修改优化激励轨迹起始位置等
-7. 运行过程中缺少什么库就激活虚拟环境pip安装什么库
+5. 注意阅读**General Robot Dynamic Parameter Identification.ipynb**文件注释，修改机器人DH参数等，以及修改优化激励轨迹起始位置等
+6. 运行过程中缺少什么库就激活虚拟环境pip安装什么库
 
 ------------------------
 
+## 运行
+
+1. 激活虚拟环境，运行jupyter-notebook
+2. 根据优化激励轨迹生成的傅里叶系数控制机械臂运动，采集数据
+3. 运行代码辨识机器人动力学参数
 
 许可
 -------
