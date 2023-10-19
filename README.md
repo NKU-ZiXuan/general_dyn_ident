@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Experimental Identification of Physically Feasible Dynamic Parameters of General Robot using LMI–SDP Techniques
 =======================================================================================================================
 
